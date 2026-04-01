@@ -6,10 +6,10 @@
 <title>Manpower Visibility — PMC Dashboard</title>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0f1a;--sf:#111827;--s2:#1a2236;--br:#1e2d44;--ac:#00d4ff;--gr:#00ff9d;--wn:#ffb830;--rd:#ff4d6d;--tx:#e2e8f0;--mu:#5a7090;--ctq:#a78bfa;--nc:#38bdf8;--at:#ff6b35;--ld:#f59e0b;}
+:root{--bg:#f4f6f8;--sf:#ffffff;--s2:#eef1f6;--br:#d3d9e7;--ac:#0f90ff;--gr:#22c55e;--wn:#f59e0b;--rd:#ef4444;--tx:#1f2937;--mu:#6b7280;--ctq:#8b5cf6;--nc:#38bdf8;--at:#f97316;--ld:#f59e0b;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--bg);color:var(--tx);font-family:'Nunito',sans-serif;min-height:100vh;}
-body::before{content:'';position:fixed;inset:0;background:linear-gradient(rgba(0,212,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.022) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0;}
+body::before{content:'';position:fixed;inset:0;background:linear-gradient(rgba(100,116,139,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(100,116,139,.04) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0;}
 
 /* LOGIN */
 #loginScreen{position:fixed;inset:0;background:var(--bg);z-index:999;display:flex;align-items:center;justify-content:center;}
@@ -27,8 +27,8 @@ body::before{content:'';position:fixed;inset:0;background:linear-gradient(rgba(0
 .login-err{color:var(--rd);font-size:12px;margin-top:8px;display:none;}
 
 /* HEADER */
-header{position:sticky;top:0;z-index:200;background:rgba(11,15,26,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--br);display:flex;align-items:center;gap:10px;padding:0 18px;height:54px;}
-.logo-icon{width:30px;height:30px;background:linear-gradient(135deg,var(--ac),var(--gr));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 0 12px rgba(0,212,255,.3);flex-shrink:0;}
+header{position:sticky;top:0;z-index:200;background:rgba(244,246,248,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--br);display:flex;align-items:center;gap:10px;padding:0 18px;height:54px;}
+.logo-icon{width:30px;height:30px;background:linear-gradient(135deg,var(--ac),var(--gr));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 0 12px rgba(15,144,255,.3);flex-shrink:0;}
 .logo-text{font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:700;letter-spacing:.8px;}
 .logo-sub{font-size:9px;color:var(--mu);letter-spacing:2px;text-transform:uppercase;}
 .hsp{flex:1;}
@@ -44,14 +44,14 @@ header{position:sticky;top:0;z-index:200;background:rgba(11,15,26,.96);backdrop-
 .logout-btn{background:rgba(255,77,109,.1);border:1px solid rgba(255,77,109,.3);border-radius:6px;padding:4px 10px;font-size:11px;color:var(--rd);font-weight:700;cursor:pointer;}
 
 /* DEPT/FLOOR SELECTOR BAR */
-.sel-bar{background:rgba(17,24,39,.94);border-bottom:1px solid var(--br);padding:6px 18px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;position:sticky;top:54px;z-index:190;}
+.sel-bar{background:rgba(244,246,248,.94);border-bottom:1px solid var(--br);padding:6px 18px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;position:sticky;top:54px;z-index:190;}
 .sb-lbl{font-size:9px;color:var(--mu);text-transform:uppercase;letter-spacing:1.5px;white-space:nowrap;}
 .sbt{padding:3px 11px;border-radius:16px;font-size:11px;font-weight:700;border:1px solid var(--br);background:var(--s2);color:var(--mu);cursor:pointer;transition:all .15s;white-space:nowrap;}
 .sbt.active,.sbt:hover{border-color:var(--ac);color:var(--ac);background:rgba(0,212,255,.08);}
 .sb-sep{width:1px;height:20px;background:var(--br);}
 
 /* TABS */
-.nav-tabs{display:flex;gap:3px;padding:9px 18px 0;border-bottom:1px solid var(--br);background:rgba(11,15,26,.6);position:sticky;top:96px;z-index:170;overflow-x:auto;}
+.nav-tabs{display:flex;gap:3px;padding:9px 18px 0;border-bottom:1px solid var(--br);background:rgba(244,246,248,.9);position:sticky;top:96px;z-index:170;overflow-x:auto;}
 .tab{padding:6px 14px;border-radius:7px 7px 0 0;font-size:12px;font-weight:700;cursor:pointer;color:var(--mu);border:1px solid transparent;border-bottom:none;transition:all .2s;white-space:nowrap;}
 .tab.active{background:var(--sf);color:var(--ac);border-color:var(--br);border-bottom:1px solid var(--sf);margin-bottom:-1px;}
 .tab:hover:not(.active){color:var(--tx);background:var(--s2);}
